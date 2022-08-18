@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Of Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body class="container background1 ">
+   <header class="mt-5">
+    <h1 class="w-100  d-lg-flex justify-content-center">Welcome <span style="padding-left: 10px; padding-right:10px;"> Mr. Gourab Roy</span> to Bank of Bangladesh</h1>
+   </header>
+   <main>
+<section class=" row row-cols-1 row-cols-lg-4 row-cols-md-4 row-cols-sm-4 d-grid d-lg-flex d-md-flex d-sm-flex justify-content-lg-center justify-content-md-center justify-content-sm-center mt-5" >
+    <div class="deposite mt-2 ms-2 p-2 d-block d-lg-grid d-md-grid d-sm-grid   rounded  ">
+        <h4 >Deposit</h4>
+        <h1 class="overflow-auto">$ <span  id="dep-tot">00</span> </h1>
+    </div>
+    <div class="withdraw mt-2 ms-2 p-2 rounded  ">
+        <h4>Withdraw</h4>
+       <h1 class="overflow-auto">$<span  id="with-board">00</span></h1>
+    </div>
+    <div class="balance mt-2 ms-2 p-2 rounded  ">
+        <h4>Balance</h4>
+        <h1 class="overflow-auto">$<span  id="total-balance">2000</span></h1>
+    </div>
+    
+
+</section >
+
+  <!-- deposite and withdraw input -->
+
+<section class="  row row-cols-lg-3 row-cols-md-3 row-cols-sm-3 row-cols-1  d-sm-flex d-md-flex d-grid d-lg-flex justify-content-lg-center justify-content-md-center justify-content-sm-center   mt-lg-5 mt-md-5 mt-sm-5 w-auto ">
+  
+    
+    <div class="deposite  mt-2 me-lg-2 me-md-2 justify-content-lg-center justify-content-md-center justify-content-sm-center p-5  rounded-3 d-lg-block d-md-block d-sm-grid d-grid w-auto ">
+        <h3>Please Deposit</h3>
+        <input id="deposite"  class="rounded d-lg-flex d-md-flex d-sm-grid" placeholder="Put amount to deposit" type="text">
+        <button id="btn-deposit" class="btn btn-primary mt-2 "  type="submit">Deposit</button>
+    </div>
+    <div class="withdraw mt-2 me-lg-2 me-md-2 justify-content-lg-center justify-content-md-center justify-content-sm-center p-5  rounded-3 d-lg-block d-md-block d-sm-grid d-grid w-auto ">
+        <h3>Please Withdraw</h3>
+        <input class="rounded d-lg-flex d-md-flex d-sm-grid" id="withdraw" placeholder="Put amount to withdraw" type="text">
+        <button class="btn btn-primary mt-2 " id="withdraw-btn" type="submit">Withdraw</button>
+    </div>
+    
+
+</section>
+
+   </main>
+    
+   <script src="utilities.js"></script>
+<script src="withdraw.js"></script>
+    <script src="deposit.js"></script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
